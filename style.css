@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+/* i import font from google its embed  */
+
+/* to reset the basic default of html */
+body {
+  margin: 0;
+  padding: 0;
+}
+  .head-container .tab-container {
+    height: 50px;
+    margin-bottom: 10px;
+    align-content: center;
+    
+  }
+  .head-container .tab-container button{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .head-container .tab-container button:hover{
+    background-color:#c9b2d1;
+  }
+.myself {
+ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28%;
+}
+.myself .mypic {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.intro p {
+  text-align: justify;
+  width: 1000X;
+  margin: 50px;
+  letter-spacing: 2px;
+  color: #777;
+}
+.intro h3 {
+  color:#777777;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 14%;
+}
+.icon{
+  display:flex;
+
+}
+.icon ul{
+  margin-top: 10px;
+  margin-left: 40%;
+  padding: 0;
+}
+.icon ul li{
+  padding: 10px;
+  display:inline-block;
+ }
+ .main-footer {
+   width: 100%;
+   height: 80px;
+   display: inline-block;
+   align-content: center;
+   margin: 0 auto;
+   padding: 0;
+ }
+ .main-footer h3 {
+  font-family: 'Gloria Hallelujah', cursive;
+   padding: 0;
+   text-align: center;
+   margin: 0;
+ }
+  /* below the code i use for my  background images is the tecnique  where i learn in w3schools*/
+ .hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/content-a.png");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+}
+
+.content-text {
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+  font-weight: lighter;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #48c42f;
+  font-size: 1em;
+}
+
+.content-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.content-text button:hover {
+  background-color:#c9b2d1;
+  color: white;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
